@@ -13,6 +13,7 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 //w-10 object-contain
+//class="object-contain h-16 w-full"
 //import logo from './ai_mern_app_assets/logo.svg';
 import { Home, CreatePost } from './pages';
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
     <BrowserRouter>
       <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to="/">
-          <img src="./logo.svg" alt="logo" className="w-10 object-contain"/>
+          <img class="object-contain h-16 w-full" src="./openai.jpg" alt="logo" />
         </Link>
 
         <Link to="/create-post" className="font-inter font-medium bg-[#6469ff] text-blue px-4 py-2 rounded-md">Create</Link>
